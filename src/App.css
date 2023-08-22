@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.App {
+  width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  gap: 20px;
+}
+.SideBar {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgb(78, 78, 78);
+  gap: 20px;
+}
+.SideBar .important {
+  /* background-color: crimson; */
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 5px solid lightcoral;
+}
+.SideBar .complete {
+  /* background-color: rgb(21, 194, 21); */
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 5px solid lightgreen;
+}
+.SideBar .important label {
+  color: lightcoral;
+  font-weight: bold;
+  font-size: 24px;
+}
+.SideBar .complete label {
+  font-weight: bold;
+  color: lightgreen;
+  font-size: 24px;
+}
+.SideBar input {
+  scale: 2;
+}
+.Header {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px 0;
+  padding-top: 60px;
+}
+.Header h1 {
+  font-size: 24px;
+  padding: 10px 20px;
+  border: 1px solid lightslategray;
+  border-radius: 30px;
+  box-shadow: 2px 2px 3px 3px lightblue;
+}
+
+.TodoEditor {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 60px;
+  width: 80%;
+}
+.TodoEditor input {
+  width: 85%;
+  padding: 20px 20px;
+  border: 10px solid lightslategray;
+  font-size: 16px;
+  outline: none;
+  border-right: none;
+}
+.TodoEditor input::placeholder {
+  font-size: 16px;
+}
+.TodoEditor input:focus::placeholder {
+  opacity: 0;
+}
+.TodoEditor button {
+  width: 15%;
+  border: 10px solid lightslategray;
+  border-left: none;
+  background-color: lightslategray;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.TodoList {
+  width: 500px;
+  padding: 20px;
+  padding-left: 60px;
+  margin: 40px 0;
+}
+.TodoList input {
+  border: none;
+  border-bottom: 5px solid lightslategray;
+  width: 100%;
+  padding: 20px;
+  outline: none;
+}
+.TodoList input::placeholder {
+  font-size: 16px;
+}
+.TodoList input:focus::placeholder {
+  opacity: 0;
+}
+
+.TodoItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 16px;
+  padding-left: 20px;
+  width: 102%;
+  margin-top: 20px;
+  margin-left: 5px;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 20px;
+}
+.TodoItem input {
+  scale: 2;
+  cursor: pointer;
+}
+.TodoItem .remove {
+  padding: 10px;
+  border: 1px solid lightslategray;
+  border-radius: 10px;
+  background-color: transparent;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.TodoItem .checkImportant {
+  border: none;
+  font-size: 20px;
+  background-color: transparent;
+}
+.TodoItem .checkNotImportant {
+  border: none;
+  font-size: 20px;
+  background-color: transparent;
+}
